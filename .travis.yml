@@ -13,6 +13,4 @@ rvm:
 before_install:
   - git submodule update --init
   - sudo apt-get update
-  - gem install bundler -v '~> 1.6' --default
-  - gem uninstall -v '>= 2' -i $(rvm gemdir)@global -ax bundler || true
   - gem list
